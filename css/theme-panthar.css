@@ -1,0 +1,24 @@
+/* 4tify / PANTHAR-inspired — dark olive + brass "field ops", Black Ops One stencil, heavy brackets */
+:root{
+  --bg:#12140E;             /* dark olive */
+  --bg-alt:#0e100a;
+  --bg-foot:#0a0c07;
+  --header-bg:rgba(10,12,7,0.9);
+  --panel:#15170f;
+  --panel-2:#1b1e13;
+  --accent:#C9A227;         /* brass / amber */
+  --accent-2:#6B7A3A;       /* olive */
+  --accent-ink:#0a0c05;
+  --accent-dim:#8a7a2e;
+  --accent-2-dark:#4f5a29;
+  --hair:rgba(201,162,39,0.22);
+  --font-display:'Black Ops One',cursive;
+  --font-body:'Lato',sans-serif;
+  --font-mono:'Share Tech Mono',monospace;
+  --bracket-opacity:1;
+  --scan-opacity:.15;
+  --grid-opacity:.04;
+  --glow:0;
+  --text:#ECE7D6;           /* warm off-white */
+  --muted:#9aa088;
+}

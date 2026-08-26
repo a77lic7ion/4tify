@@ -1,0 +1,24 @@
+/* 4tify / BLACKCATS-inspired — near-black + cyan "command console", Rajdhani, glow + grid */
+:root{
+  --bg:#070b10;
+  --bg-alt:#0a0f16;
+  --bg-foot:#05080c;
+  --header-bg:rgba(5,8,12,0.9);
+  --panel:#0b121b;
+  --panel-2:#0e1622;
+  --accent:#22D3EE;          /* cyan */
+  --accent-2:#0EA5E9;        /* sky */
+  --accent-ink:#04141a;
+  --accent-dim:#0e7490;
+  --accent-2-dark:#0369a1;
+  --hair:rgba(34,211,238,0.22);
+  --font-display:'Rajdhani',sans-serif;
+  --font-body:'Lato',sans-serif;
+  --font-mono:'Share Tech Mono',monospace;
+  --bracket-opacity:.45;
+  --scan-opacity:.10;
+  --grid-opacity:.06;
+  --glow:1;                  /* accent glow on */
+  --text:#E6F1F5;
+  --muted:#8aa3b0;
+}

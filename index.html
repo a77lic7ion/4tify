@@ -12,10 +12,11 @@
     <!-- Fonts: condensed/stencil headings + mono tactical labels + Lato body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Share+Tech+Mono&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Share+Tech+Mono&family=Lato:wght@400;700&family=Rajdhani:wght@400;500;600;700&family=Black+Ops+One&display=swap" rel="stylesheet">
 
-    <!-- Tactical design system (palette preserved) -->
-    <link rel="stylesheet" href="css/tactical.css">
+    <!-- Shared base + swappable theme stylesheet (instant switch) -->
+    <link rel="stylesheet" href="css/base.css">
+    <link id="themeStylesheet" rel="stylesheet" href="css/theme-original.css">
 </head>
 <body class="antialiased">
 
@@ -37,11 +38,22 @@
                     <a href="#faq"     class="nav-link">FAQ</a>
                     <a href="#contact" class="btn-red py-2 px-4 rounded-sm text-sm">Contact</a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-                    </svg>
-                </button>
+                <div class="flex items-center space-x-3">
+                    <!-- THEME switcher (always visible, top-right) -->
+                    <div id="themeSwitcher" class="relative">
+                        <button id="themeBtn" class="theme-btn" aria-haspopup="true" aria-expanded="false">
+                            <span class="opacity-70">THEME:</span>
+                            <span id="themeBtnLabel" class="ml-1">4tify Original</span>
+                            <svg class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor"><path d="M5 7l5 5 5-5z"/></svg>
+                        </button>
+                        <div id="themeMenu" class="theme-menu hidden"></div>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
             <div id="mobile-menu" class="hidden md:hidden mt-3">
                 <a href="#home"    class="block nav-link py-2">Home</a>
@@ -361,5 +373,6 @@
     </footer>
 
     <script src="js/site.js"></script>
+    <script src="js/theme-switcher.js"></script>
 </body>
 </html>

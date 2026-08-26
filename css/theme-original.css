@@ -1,0 +1,24 @@
+/* 4tify ORIGINAL theme — black + gold + red, Oswald, brackets + scanlines */
+:root{
+  --bg:#111111;
+  --bg-alt:#0d0d0d;
+  --bg-foot:#000000;
+  --header-bg:rgba(0,0,0,0.85);
+  --panel:#0b0b0b;
+  --panel-2:#161616;
+  --accent:#D4AF37;
+  --accent-2:#DC2626;
+  --accent-ink:#0a0a0a;
+  --accent-dim:#a9852a;
+  --accent-2-dark:#B91C1C;
+  --hair:rgba(212,175,55,0.25);
+  --font-display:'Oswald',sans-serif;
+  --font-body:'Lato',sans-serif;
+  --font-mono:'Share Tech Mono',monospace;
+  --bracket-opacity:.85;
+  --scan-opacity:.22;
+  --grid-opacity:.035;
+  --glow:0;
+  --text:#F5F5F5;
+  --muted:#9CA3AF;
+}
