@@ -2,6 +2,7 @@
 (function(){
   var LAYOUTS = [
     { id:'original',   label:'4tify Original' },
+    { id:'blackhawk',  label:'Blackhawak Tactical' },
     { id:'blackcats',  label:'Blackcats Console' },
     { id:'panthar',    label:'Panthar Field-Ops' }
   ];
@@ -60,7 +61,8 @@
     document.querySelectorAll('[data-scroll]').forEach(function(a){
       a.addEventListener('click', function(e){
         e.preventDefault();
-        var target = document.querySelector('#' + a.getAttribute('data-scroll'));
+        var active = document.querySelector('.layout-block.is-active');
+        var target = active ? active.querySelector('#' + a.getAttribute('data-scroll')) : document.querySelector('#' + a.getAttribute('data-scroll'));
         if (target) target.scrollIntoView({ behavior:'smooth', block:'start' });
         var mm = document.getElementById('mobile-menu'); if (mm) mm.classList.add('hidden');
       });
